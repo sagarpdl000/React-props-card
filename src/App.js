@@ -1,24 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import Card from './Components/Card';
+import product from './Components/Product';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Card
+      imgsrc ={product[0].imgsrc}
+      product = {product[0].product_name}
+      product_price = {product[0].product_price}
+      />
+
+      <Card
+      imgsrc ={product[1].imgsrc}
+      product = {product[1].product_name}
+      product_price = {product[1].product_price}
+      />
+
+      <Card
+      imgsrc ={product[0].imgsrc}
+      product = {product[0].product_name}
+      product_price = {product[0].product_price}
+      />
+
+    <Card
+      imgsrc ={product[0].imgsrc}
+      product = {product[0].product_name}
+      product_price = {product[0].product_price}
+      />
+
     </div>
+
   );
 }
 
